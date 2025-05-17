@@ -20,8 +20,8 @@ Before you begin, ensure you have the following installed:
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone <https://github.com/stefi-says/solana_pools_get_data>
+cd <solana_pools_get_data>
 ```
 
 2. Create a virtual environment (recommended):
@@ -90,10 +90,10 @@ The project includes mock data for testing purposes. To use mock data, set `use_
 
 The script includes built-in rate limiting to prevent API throttling. By default, there's a 0.2-second delay between API calls. You can adjust this by modifying the `rate_sleep_delay` parameter when initializing the SolanaPoolAnalyzer.
 
-## Next Steps and enhacements
-[] double test function using real calls and data
-[] analyse integration of ThreadPoolExecutor to optmize execution time 
-[] integrate caching and logging for data extraction
+## Next Steps and enhacements  
+[ ] double test function using real calls and data  
+[ ] analyse integration of ThreadPoolExecutor to optmize execution time   
+[ ] integrate caching and logging for data extraction  
 
 
 ## 🤝 Contributing
