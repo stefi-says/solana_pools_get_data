@@ -1,0 +1,9 @@
+# Python package dependencies
+# Format: package_name==version
+
+# Core dependencies
+requests
+python-dotenv
+pandas
+typing-extensions
+# Add more dependencies as needed 
