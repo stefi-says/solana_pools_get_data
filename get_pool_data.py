@@ -72,10 +72,10 @@ class SolanaPoolAnalyzer:
                 transfers = response_in_json.get('data', {})
                 
                 if last_block_timestamp and not transfers:
-                    print(f"Error: {response_in_json.get('error', {})} - Last page number: {page_number}, Last transaction timestamp: {last_block_timestamp}")
+                    print(f"Error: {response_in_json.get('errors', {})} - Last page number: {page_number}, Last transaction timestamp: {last_block_timestamp}")
                     break
                 if not last_block_timestamp and not transfers:
-                    print(f"Error: {response_in_json.get('error', {})}")
+                    print(f"Error: {response_in_json.get('errors', {})}")
                     break
 
                 transactions = pd.DataFrame(transfers)
